@@ -9,6 +9,7 @@ a {
     text-decoration: none;
 
 }
+
 #header {
     position: fixed;
     top: 0;
@@ -41,9 +42,6 @@ ul.menu li a{
     padding: 10px;
     color: white
 }
-main {
-
-}
 
 #welcome-section{
     display: flex;
@@ -69,7 +67,7 @@ font-style: italic;
 color: red;
 }
 
-.projects-grid {
+#projects {
     /*display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
@@ -79,13 +77,29 @@ color: red;
     margin-bottom: 6rem;*/
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
   
-.projects-grid > div {
+#projects > div {
     flex: 1 1 200px;
     margin: 10px;
 }
   
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    #welcome-section{ background-color: gray;}
+ }
+ 
+@media  (min-width: 768px) and (max-width: 1024px) {
+    #welcome-section{ background-color: rgb(165, 118, 118);}
+ }
+ 
+@media  (min-width: 480px) and (max-width: 768px) {
+    #welcome-section{ background-color: rgb(43, 139, 99);}
+ }
+ 
+@media (max-width: 480px) {
+    #welcome-section{ background-color: rgb(128, 128, 128);}
+ }
